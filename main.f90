@@ -12,5 +12,11 @@ program main
     print '(a30, i4)', "main: k = ", k
   end block
 
+  block
+    integer :: i = 2, j
+    j = my_square(i)
+    print '(a30, i4)', "main: j = i * i = ", j
+  end block
+
   stop
 end program main
