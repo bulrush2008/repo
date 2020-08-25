@@ -16,6 +16,9 @@ function my_add(i, j) result (k)
   integer :: k
 
   k = i + j
+
+  print '(a30, i4)', "k = ", k
+
   return
 end function my_add
 
@@ -24,6 +27,8 @@ function my_square(i) result (j)
   integer :: j
 
   j = i * i
+  print '(a30, i4)', "main: j = i * i = ", j
+
   return
 end function my_square
 
